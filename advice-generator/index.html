@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/advice-icon.png"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <script src="script.js" defer></script>
+
+    <title>Advice generator app</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="advice">
+          click on dice for loading <span>advice ...</span>
+        </div>
+      </div>
+
+      <picture class="pattern-img">
+        <source
+          media="(max-width: 1023px)"
+          srcset="images/pattern-divider-mobile.svg"
+        />
+        <source
+          media="(min-width: 1024px)"
+          srcset="images/pattern-divider-desktop.svg"
+        />
+        <img src="images/pattern-divider-mobile.svg" alt="Pattern Image" />
+      </picture>
+
+      <button class="dice">
+        <img src="images/icon-dice.svg" alt="dice icon" />
+      </button>
+    </div>
+  </body>
+</html>
